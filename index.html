@@ -2,128 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayushi Thakur | Data Analyst</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f8f9fb;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #1f2937;
-      color: #fff;
-      padding: 2.5rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1.5rem;
-    }
-    h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 0.4rem;
-      color: #111827;
-    }
-    .skills span {
-      display: inline-block;
-      background: #e5e7eb;
-      padding: 0.4rem 0.7rem;
-      margin: 0.3rem;
-      border-radius: 6px;
-      font-size: 0.9rem;
-    }
-    .project {
-      background: #fff;
-      padding: 1.2rem;
-      margin-top: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: #1f2937;
-      color: #fff;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayushi Thakur | Data Analyst Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Ayushi Thakur</h1>
-  <p>Data Analyst | Python • SQL • Power BI • Excel • Machine Learning</p>
-  <p>
-    <a href="mailto:ayushithakur.2309@gmail.com">ayushithakur.2309@gmail.com</a> | 
-    <a href="https://www.linkedin.com/in/ayushi-thakur-7bb07b230">LinkedIn</a> | 
-    <a href="https://github.com/ayushi21136">GitHub</a>
-  </p>
+  <nav class="navbar">
+    <h2 class="logo">Ayushi Thakur</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section>
+<section class="hero">
+  <h1>Hi, I'm <span>Ayushi</span></h1>
+  <p>Data Analyst | Python | SQL | Power BI | Machine Learning</p>
+  <a href="assets/resume.pdf" class="btn" target="_blank">Download Resume</a>
+</section>
+
+<section id="about" class="section">
   <h2>About Me</h2>
   <p>
-    A detail-oriented Data Analyst with strong expertise in data analysis, visualization, and machine learning. 
-    I enjoy transforming raw data into actionable insights and communicating results effectively to stakeholders.
+    Detail-oriented Data Analyst with expertise in statistical analysis,
+    data visualization, and database management. Proficient in Python,
+    SQL, Excel, Power BI, and Tableau for extracting insights and
+    presenting findings. Strong problem-solving and communication skills.
   </p>
 </section>
 
-<section>
+<section id="skills" class="section">
   <h2>Skills</h2>
-  <div class="skills">
-    <span>Python</span><span>SQL</span><span>Excel</span><span>Power BI</span><span>Tableau</span>
-    <span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span><span>Matplotlib</span><span>Seaborn</span>
-    <span>Machine Learning</span><span>EDA</span><span>Data Cleaning</span>
+  <div class="grid">
+    <div class="card">Python</div>
+    <div class="card">SQL</div>
+    <div class="card">Excel</div>
+    <div class="card">Power BI</div>
+    <div class="card">Tableau</div>
+    <div class="card">Machine Learning</div>
+    <div class="card">Statistics</div>
+    <div class="card">MySQL</div>
+    <div class="card">Git & GitHub</div>
   </div>
 </section>
 
-<section>
+<section id="projects" class="section">
   <h2>Projects</h2>
 
   <div class="project">
-    <h3>🎬 Movie Rating Prediction</h3>
-    <p>Built a machine learning model to predict movie ratings using Linear Regression. Performed feature engineering and data preprocessing to improve accuracy.</p>
-    <a href="https://github.com/ayushi21136/CODSOFT/tree/main/Task-2%20Movie_rating_prediction">View Project</a>
+    <h3>Movie Rating Prediction</h3>
+    <p>
+      Built a machine learning model using Linear Regression to predict
+      movie ratings based on genre, director, cast, and release year.
+    </p>
+    <a href="https://github.com/ayushi21136/CODSOFT/tree/main/Task-2%20Movie_rating_prediction" target="_blank">View Project</a>
   </div>
 
   <div class="project">
-    <h3>🚢 Titanic Survival Prediction</h3>
-    <p>Developed a Logistic Regression model achieving 89% accuracy to identify survival factors such as age, gender, and class.</p>
-    <a href="https://github.com/ayushi21136/CODSOFT/tree/main/Task-1%20Titanic_survival_prediction">View Project</a>
+    <h3>Titanic Survival Prediction</h3>
+    <p>
+      Developed a classification model using Logistic Regression to predict
+      passenger survival with 89% accuracy.
+    </p>
+    <a href="https://github.com/ayushi21136/CODSOFT/tree/main/Task-1%20Titanic_survival_prediction" target="_blank">View Project</a>
   </div>
 
   <div class="project">
-    <h3>💳 Credit Card Fraud Detection</h3>
-    <p>Implemented Logistic Regression and Random Forest models with class imbalance handling. Evaluated using precision, recall, and F1-score.</p>
-    <a href="https://github.com/ayushi21136/CODSOFT/tree/main/Task-3%20Credit_card_fraud_detection">View Project</a>
+    <h3>Credit Card Fraud Detection</h3>
+    <p>
+      Implemented Logistic Regression and Random Forest models to detect
+      fraudulent transactions using precision, recall, and F1-score.
+    </p>
+    <a href="https://github.com/ayushi21136/CODSOFT/tree/main/Task-3%20Credit_card_fraud_detection" target="_blank">View Project</a>
   </div>
 </section>
 
-<section>
+<section id="education" class="section">
   <h2>Education</h2>
-  <p><strong>Bachelor of Engineering (Computer Engineering)</strong><br>
-  Dr. D. Y. Patil Institute of Engineering Management and Research, Pune<br>
-  GPA: 8.59 / 10</p>
+  <p><strong>B.E. Computer Engineering</strong><br>
+     Dr. D.Y. Patil Institute of Engineering Management and Research, Pune<br>
+     GPA: 8.59/10 (2021–2025)
+  </p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:ayushithakur.2309@gmail.com">ayushithakur.2309@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/ayushi-thakur-7bb07b230" target="_blank">LinkedIn Profile</a></p>
+  <p>GitHub: <a href="https://github.com/ayushi21136" target="_blank">github.com/ayushi21136</a></p>
 </section>
 
 <footer>
   <p>© 2026 Ayushi Thakur | Data Analyst</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
