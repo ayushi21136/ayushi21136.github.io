@@ -25,6 +25,8 @@ header {
 .navbar a {
   position: relative;
   padding-bottom: 4px;
+  color: var(--text-main);
+  text-decoration: none;
 }
 
 .navbar a::after {
@@ -107,9 +109,6 @@ header {
   color: var(--primary);
 }
 
-body {
-  cursor: default;
-}
 
 a, button {
   cursor: pointer;
