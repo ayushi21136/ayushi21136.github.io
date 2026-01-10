@@ -1,3 +1,10 @@
+:root {
+  --bg-main: #0f172a;
+  --bg-card: #020617;
+  --primary: #38bdf8;
+  --secondary: #a78bfa;
+  --text-main: #e5e7eb;
+}
 * {
   margin: 0;
   padding: 0;
@@ -15,22 +22,26 @@ header {
   padding: 15px 40px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
 .navbar a {
-  color: #e5e7eb;
-  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
 }
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
 
 .hero {
   height: 90vh;
@@ -46,13 +57,21 @@ header {
 }
 
 .btn {
-  background: #38bdf8;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #020617;
-  padding: 12px 25px;
-  border-radius: 6px;
+  padding: 12px 26px;
+  border-radius: 8px;
   text-decoration: none;
   margin-top: 20px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.35);
+}
+
 
 .section {
   padding: 70px 40px;
@@ -67,16 +86,54 @@ header {
 }
 
 .card, .project {
-  background: #020617;
+  background: var(--bg-card);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.25);
 }
 
 .project a {
-  color: #38bdf8;
-  display: inline-block;
-  margin-top: 10px;
+  color: var(--secondary);
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
+
+.project a:hover {
+  color: var(--primary);
+}
+
+body {
+  cursor: default;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+a:hover {
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+}
+.section h2 {
+  margin-bottom: 20px;
+  color: var(--primary);
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--secondary);
+  margin-top: 6px;
+  border-radius: 5px;
+}
+
 
 footer {
   text-align: center;
