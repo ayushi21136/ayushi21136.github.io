@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+header {
+  background: #020617;
+  padding: 15px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.btn {
+  background: #38bdf8;
+  color: #020617;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.section {
+  padding: 70px 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.card, .project {
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project a {
+  color: #38bdf8;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
